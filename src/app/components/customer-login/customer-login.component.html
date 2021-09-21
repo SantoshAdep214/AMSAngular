@@ -1,0 +1,216 @@
+<link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navigation" data-interval="2000">
+    <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent ">
+        <ul class="navbar-nav mr-auto " id="nv ">
+
+
+            <li class="nav-item active ">
+                <a class="nav-link active " id="home " href=" " style="color: orange;font-weight: bolder; font-size: 25px; ">BMW <span class="sr-only ">(current)</span></a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class="nav-item active ">
+                <a class="nav-link active " id="home " href=" " style=" font-size: 20px; ">Home <span class="sr-only ">(current)</span></a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class="nav-item ">
+                <a class="nav-link " href="#models" style="font-size: 20px;  ">Models</a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class=" nav-item ">
+                <a class="nav-link " href="http://localhost:4200/CustomerLogin " style="font-size: 20px; " (click)="Buynow()">BuyNow</a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+
+
+            <li class="nav-item ">
+                <a class="nav-link " href=" http://localhost:4200/BookService" style="font-size: 20px; ">Services</a>
+            </li>
+
+            &nbsp; &nbsp;&nbsp;&nbsp;
+
+            <!-- <li class="nav-item ">
+                <a class="nav-link " href=" http://localhost:4200/CustomerLogin " style="font-size: 20px; ">Login</a>
+            </li> -->
+            <!-- &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class="nav-item ">
+                <a class="nav-link " href="http://localhost:4200/CustomerRegister " style="font-size: 20px; ">Register</a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp; -->
+            <li class="nav-item ">
+                <a class="nav-link " href="#contacts " style="font-size: 20px; ">Contacts</a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+<section class="vh-100 bg-image" style="background-image: url('../../../assets/m4.jpg'); position: relative; top:-20px; height:800px; ">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3 " style="height:400px; ">
+        <div class="container h-100 ">
+            <div class="row d-flex justify-content-center align-items-center h-100 ">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6 ">
+                    <div class="card " style="border:2px solid rgb(248, 244, 244); ">
+                        <div class="card-body p-5 ">
+                            <h2 class="text-uppercase text-center mb-5 ">Sign In</h2>
+
+                            <form [formGroup]="LoginForm" (ngSubmit)="Login() ">
+
+                                <div class="form-outline mb-4 ">
+                                    <label class="form-label" for="form3Example3cg">Your Email</label>
+                                    <input type="email" id="form3Example3cg " class="form-control form-control-lg " formControlName="email" />
+                                    <span *ngIf="LoginForm.controls['email'].hasError( 'required') " style="color: red; font-weight: bold; ">Email Required</span>
+                                    <span *ngIf="LoginForm.controls['email'].hasError( 'pattern') " style="color: red; font-weight: bold; ">Invalid Email </span>
+                                </div>
+
+                                <div class="form-outline mb-4 ">
+                                    <label class="form-label " for="form3Example4cg ">Password</label>
+                                    <input type="password" id="form3Example4cg" class="form-control form-control-lg " formControlName="password" />
+                                    <span *ngIf="LoginForm.controls['password'].hasError( 'required') " style="color: red; font-weight: bold; ">Password Required</span>
+                                    <!-- <span *ngIf="LoginForm.controls[ 'password'].hasError( 'pattern') " style="color: red; font-weight: bold; ">password must contain atleast 4 characters</span> -->
+                                </div>
+                                <br>
+                                <!-- <div class="form-check d-flex justify-content-center mb-5 ">
+                                    <input class="form-check-input me-2 " type="checkbox " value=" " id="form2Example3cg " />
+                                    <label class="form-check-label " for="form2Example3g ">
+        I agree all statements in <a href="#! " class="text-body "><u>Terms of service</u></a>
+      </label>
+                                </div> -->
+                                <br>
+                                <div class="d-flex justify-content-center ">
+                                    <button type="submit " class="btn btn-success btn-block btn-lg gradient-custom-4 text-body " [disabled]="LoginForm.invalid">Login</button>
+                                </div>
+
+                                <p class="text-center text-muted mt-5 mb-0 ">Dont have an account? <a href="http://localhost:4200/CustomerRegister" class="fw-bold text-body "><u>Register Here</u></a></p>
+                                <!-- <h3 style="text-align: center; ">Customer Login</h3>
+        <table class="table table-hover " cellpadding="10 ">
+            <tr>
+                <td>Enter email:</td>
+                <td><input type="text " formControlName="email "></td>
+                <td><span *ngIf="LoginForm.controls[ 'email'].hasError( 'required') "></span></td>
+                <div *ngIf="LoginForm.controls[ 'email'].hasError( 'pattern') ">Email must contain uppercase,lowercase and special character(@) </div>
+            </tr>
+
+            <tr>
+                <td>Enter Password:</td>
+                <td><input type="text " formControlName="password "></td>
+                <td><span *ngIf="LoginForm.controls[ 'password'].hasError( 'required') "></span></td>
+                <div *ngIf="LoginForm.controls[ 'password'].hasError( 'pattern') ">password must contain atleast 6 characters</div>
+            </tr>
+
+
+            <tr>
+                <td><button type="submit " class="btn btn-success btn-lg mb-1 ">Login</button></td>
+            </tr>
+        </table> -->
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <body style=" position:relative; bottom:-50px; left:0px; top:-100px " id="contacts ">
+        <hr class=" hr-or ">
+        <span class="span-or "></span>
+        <hr class="hr-or ">
+        <hr class="hr-or ">
+        <footer class="nb-footer " style="width:1260px; position: relative; top:0px; bottom:-100px; ">
+            <div class=" container ">
+                <div class="row ">
+                    <div class="col-sm-12 ">
+                        <div class="about ">
+                            <!-- <img src="images/logo.png " class="img-responsive center-block " alt=" "> -->
+
+                            <div class="social-media ">
+                                <ul class="list-inline ">
+                                    <li><a href="https://www.facebook.com/ " title=" "><i class="fa fa-facebook "></i></a></li>
+                                    <li><a href="https://www.twitter.com/ " title=" "><i class="fa fa-twitter "></i></a></li>
+                                    <li><a href="https://www.google.com/ " title=" "><i class="fa fa-google-plus "></i></a></li>
+                                    <li><a href="https://www.linkedin.com/ " title=" "><i class="fa fa-linkedin "></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="footer-info-single ">
+                            <h2 class="title ">Contact</h2>
+                            <ul class="list-unstyled ">
+                                <li>
+                                    <a href="https://www.bmw.in/en/fastlane/dealer-locator.html#/dlo/IN/en/BMW_BMWM " title=" "><i class="fa fa-angle-double-right "></i> Find a Dealer </a>
+                                </li>
+                                <li><a href="http://www.nextbootstrap.com/ " title=" "><i class="fa fa-angle-double-right "></i> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="footer-info-single ">
+                            <h2 class="title ">Quick Links</h2>
+                            <ul class="list-unstyled ">
+                                <li><a href="https://www.bmw.in/en/configurator.html " title=" "><i class="fa fa-angle-double-right "></i>Build Your BMW </a></li>
+                                <li><a href="https://www.bmw.in/en/fastlane/bmw-financial-services-new/overview.html " title=" "><i class="fa fa-angle-double-right "></i>BMW Financial Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="footer-info-single ">
+                            <h2 class="title ">Experience BMW</h2>
+                            <ul class="list-unstyled ">
+                                <li>
+                                    <a href="https://www.bmw.in/en/topics/Fascination-BMW/bmw-group.html " title=" "><i class="fa fa-angle-double-right "></i> BMW Group</a>
+                                </li>
+                                <li><a href="https://www.bmw.in/en/topics/Fascination-BMW/bmw-excellence-club.html " title=" "><i class="fa fa-angle-double-right "></i> BMW Excellence Club</a></li>
+                                <li>
+                                    <a href="https://www.bmw.in/en/footer/experience-bmw--/bmw-motorrad.html " title=" "><i class="fa fa-angle-double-right "></i> BMW Motorrad</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="footer-info-single ">
+                            <h2 class="title ">Legal</h2>
+                            <ul class="list-unstyled ">
+                                <li><a href="https://www.bmw.in/en/footer/metanavigation/-legal-disclaimer-imprint.html " title=" "><i class="fa fa-angle-double-right "></i> Legal Disclaimer</a></li>
+                                <li>
+                                    <a href="https://www.bmw.in/en/footer/metanavigation/privacy-policy.html " title=" "><i class="fa fa-angle-double-right "></i> Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.bmw.in/en/footer/footer-section/cookie-policy.html " title=" "><i class="fa fa-angle-double-right "></i> Cookie Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="copyright ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-sm-6 ">
+                            <p> © BMW AG 2021</p>
+                        </div>
+                        <div class="col-sm-6 "></div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</section>

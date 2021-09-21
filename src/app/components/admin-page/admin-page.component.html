@@ -1,0 +1,650 @@
+<link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navigation" data-interval="2000">
+    <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent ">
+        <ul class="navbar-nav mr-auto " id="nv ">
+
+
+            <li class="nav-item active ">
+                <a class="nav-link active " id="home " href=" " style="color: orange;font-weight: bolder; font-size: 25px; ">BMW <span class="sr-only ">(current)</span></a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class="nav-item active ">
+                <a class="nav-link active " id="home " href=" " style=" font-size: 20px; ">Home <span class="sr-only ">(current)</span></a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class="nav-item ">
+                <a class="nav-link " href="#models" style="font-size: 20px;  ">Models</a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class=" nav-item ">
+                <a class="nav-link " href="http://localhost:4200/GetAllCustomers" style="font-size: 20px; ">Customer List</a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class=" nav-item ">
+                <a class="nav-link " href="http://localhost:4200/CarDetails" style="font-size: 20px; ">InsertCars</a>
+            </li>&nbsp; &nbsp;&nbsp;&nbsp;
+
+            <li class="nav-item ">
+                <a class="nav-link " href=" http://localhost:4200/GetAllEmployees" style="font-size: 20px; ">Employee List</a>
+            </li>&nbsp; &nbsp;&nbsp;&nbsp;
+
+            <li class="nav-item ">
+                <a class="nav-link " href=" http://localhost:4200/GetAllCars" style="font-size: 20px; ">Cars List</a>
+            </li>
+
+            <!-- &nbsp; &nbsp;&nbsp;&nbsp;
+
+            <li class="nav-item ">
+                <a class="nav-link " href=" http://localhost:4200/CustomerLogin" style="font-size: 20px; ">Login</a>
+            </li> -->
+
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class=" nav-item ">
+                <a class="nav-link " href="http://localhost:4200/AdminGetAllServices" style="font-size: 20px; ">Service List</a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class="nav-item ">
+                <a class="nav-link " href=" http://localhost:4200/GetAllOrders" style="font-size: 20px; ">Order List</a>
+            </li>
+            &nbsp; &nbsp;&nbsp;&nbsp;
+            <li class="nav-item ">
+                <a class="nav-link " href="http://localhost:4200/CustomerHomePage" style="font-size: 20px; ">Logout</a>
+            </li>
+
+
+
+        </ul>
+
+    </div>
+</nav>
+
+
+
+<div id="carouselExampleCaptions "  class="carousel slide "  data-ride="carousel "  data-interval="1000" style="position: relative; top:-20px">
+
+    <ol class="carousel-indicators ">
+
+        <li data-target="#carouselExampleCaptions "  data-slide-to="0 "  class="active "></li>
+
+            <li data-target="#carouselExampleCaptions "  data-slide-to="1 "></li>
+
+                <li data-target="#carouselExampleCaptions "  data-slide-to="2 "></li>
+                    </ol>
+
+                    <div class="carousel-inner ">
+
+                        <div class="carousel-item active " id="jumb1">
+
+                            <!-- <img src="\assets\bmw_x2.jpg"  class="d-block w-100 "  alt="... " style="height:600px; background-repeat:no-repeat center center/cover; " data-interval="1000 "> -->
+
+                            <div class="carousel-caption d-none d-md-block ">
+
+                                <div class="container ">
+
+                                    <div class="row justify-content-start text-left ">
+
+                                        <div class="col-lg-8 mx-auto " style="position: relative; top:-1px;right:230px">
+                                            <h1 style="font-size: 50px;">THE BMW X2</h1>
+                                            <p style="font-size: 30px;">"LUXURY MID-SIZE SUV OF THE YEAR 2021"-TOP GEAR</p>
+
+
+
+
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <div class="carousel-item " id="jumb2">
+
+                                                <!-- <img src="\assets\bmw9.jpg "  class="d-block w-100 "  alt="... " style="height:600px; background-repeat:no-repeat center center/cover " data-interval="1000 "> -->
+
+                                                <div class="carousel-caption d-none d-md-block ">
+
+                                                    <div class="container ">
+
+                                                        <div class="row justify-content-start text-left ">
+
+                                                            <div class="col-lg-8 mx-auto " style="position: relative; top:-120px;right:230px">
+                                                                <h1 style="font-size: 50px;">THE BMW 9 SERIES</h1>
+                                                                <p style="font-size: 30px;">"LUXURY SUDAN CAR OF THE YEAR 2021"-TOP GEAR</p>
+
+
+
+
+                                                                </div>
+                                                                </div>
+                                                                </div>
+                                                                </div>
+                                                                </div>
+
+                                                                <div class="carousel-item " id="jumb3">
+
+                                                                    <!-- <img src="\assets\bmw-768688_1920.jpg"  class="d-block w-100 "  alt="... " style="height:600px; background-repeat:no-repeat center center/cover " data-interval="1000 "> -->
+
+                                                                    <div class="carousel-caption d-none d-md-block ">
+
+                                                                        <div class="container ">
+
+                                                                            <div class="row justify-content-start text-left ">
+
+                                                                                <div class="col-lg-8 mx-auto " style="position: relative; top:-120px;right:230px">
+                                                                                    <h1 style="font-size: 50px;">THE BMW M4</h1>
+                                                                                    <p style="font-size: 30px;">"SPORTS CAR OF THE YEAR 2021"-TOP GEAR</p>
+
+
+
+
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    </div>
+
+
+
+
+
+                                                                                    <a class="carousel-control-prev "  href="#carouselExampleCaptions "  role="button "  data-slide="prev ">
+
+                                                                                        <span class="carousel-control-prev-icon "  aria-hidden="true "></span>
+
+                                                                                            <span class="sr-only ">Previous</span>
+                                                                                                </a>
+
+                                                                                                <a class="carousel-control-next "  href="#carouselExampleCaptions "  role="button "  data-slide="next ">
+
+                                                                                                    <span class="carousel-control-next-icon "  aria-hidden="true "></span>
+
+                                                                                                        <span class="sr-only ">Next</span>
+                                                                                                            </a>
+                                                                                                            </div>
+                                                                                                            <!--image add -->
+
+
+
+
+
+
+                                                                                                            <!-- Container (Portfolio Section) -->
+                                                                                                            <div class="container-fluid text-center bg-grey" id="models">
+                                                                                                                <h1 style="font-weight:bold;">Models</h1><br>
+                                                                                                                <h1 style="color:rgb(255, 145, 0); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">MODEL SUGGESTIONS FOR YOU</h1>
+
+
+                                                                                                                <div class="container-fluid text-center bg-grey">
+                                                                                                                    <div class="row text-center">
+                                                                                                                        <div class="col-sm-4">
+                                                                                                                            <div class="thumbnail">
+                                                                                                                                <img src="../../../assets/img/bmx1" alt="Paris" width="400" height="300">
+                                                                                                                                <h1><strong>BMW X4</strong></h1>
+                                                                                                                                <h1>Price:₹76,90,000</h1>
+
+                                                                                                                                <div class="container">
+
+
+                                                                                                                                    <h2 data-toggle="collapse" data-target="#demo" style="color:rgb(0, 119, 255)">Show More</h2>
+                                                                                                                                    <div id="demo" class="collapse">
+                                                                                                                                        <h3>Color:Grey</h3>
+                                                                                                                                        <h3>TopSpeed:260km/hr</h3>
+                                                                                                                                        <h3>Mileage:16km/litre</h3>
+                                                                                                                                        <h3>Petrol/Diesel</h3>
+                                                                                                                                        <h3>HP Power:220hp
+                                                                                                                                        </h3>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <button type="submit" class="btn btn-warning  btn-lg gradient-custom-4 text-body" style="width:120px;height: 35px; margin-left:80px; padding-top: 5px; position: relative; left:-42px; font-weight: bolder;" (click)="Login()">Book Now </button>
+
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+
+
+
+                                                                                                                        <div class="col-sm-4">
+                                                                                                                            <div class="thumbnail">
+                                                                                                                                <img src="../../../assets/img/x7" alt="Paris" width="400" height="300">
+                                                                                                                                <h1><strong>BMW X1</strong></h1>
+                                                                                                                                <h1>Price:₹50,90,000</h1>
+
+                                                                                                                                <div class="container">
+
+
+                                                                                                                                    <h2 data-toggle="collapse" data-target="#demo1" style="color:rgb(0, 119, 255)">Show More</h2>
+                                                                                                                                    <div id="demo1" class="collapse">
+                                                                                                                                        <h3>Color:Black</h3>
+                                                                                                                                        <h3>TopSpeed:270km/hr</h3>
+                                                                                                                                        <h3>Mileage:16km/litre</h3>
+                                                                                                                                        <h3>Petrol/Diesel</h3>
+                                                                                                                                        <h3>HP Power:220hp
+                                                                                                                                        </h3>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <button type="submit" class="btn btn-warning  btn-lg gradient-custom-4 text-body" style="width:120px;height: 35px; margin-left:80px; padding-top: 5px; position: relative; left:-42px; font-weight: bolder;" (click)="Login()">Book Now </button>
+
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+
+
+
+                                                                                                                        <div class=" col-sm-4 ">
+                                                                                                                            <div class="thumbnail ">
+                                                                                                                                <img src="../../../assets/img/x5 " alt="Paris " width="400 " height="500 " style="height:192px ">
+                                                                                                                                <h1><strong>BMW X4</strong></h1>
+                                                                                                                                <h1>Price:₹57,90,000</h1>
+
+                                                                                                                                <div class="container">
+                                                                                                                                    <h2 data-toggle="collapse" data-target="#demo2" style="color:rgb(0, 119, 255) ">Show More</h2>
+                                                                                                                                    <div id="demo2" class="collapse ">
+                                                                                                                                        <h3>Color:Red</h3>
+                                                                                                                                        <h3>TopSpeed:260km/hr</h3>
+                                                                                                                                        <h3>Mileage:16km/litre</h3>
+                                                                                                                                        <h3>Petrol/Diesel</h3>
+                                                                                                                                        <h3>HP Power:220hp
+                                                                                                                                        </h3>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <button type="submit " class="btn btn-warning btn-lg gradient-custom-4 text-body " style="width:120px;height: 35px; margin-left:80px;
+                                                                                                                                    padding-top: 5px; position: relative; left:-42px; font-weight: bolder; " (click)="Login() ">Book Now </button>
+
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+
+
+
+                                                                                                                        <div class="col-sm-4 ">
+                                                                                                                            <div class="thumbnail ">
+                                                                                                                                <img src="../../../assets/img/x5 " alt="Paris " width="400 " height="300 ">
+                                                                                                                                <h1><strong>BMW X5</strong></h1>
+                                                                                                                                <h1>Price:₹88,90,000</h1>
+
+                                                                                                                                <div class="container ">
+
+
+                                                                                                                                    <h2 data-toggle="collapse" data-target="#demo3" style="color:rgb(0, 119, 255) ">Show More</h2>
+                                                                                                                                    <div id="demo3" class="collapse ">
+                                                                                                                                        <h3>Color:While</h3>
+                                                                                                                                        <h3>TopSpeed:280km/hr</h3>
+                                                                                                                                        <h3>Mileage:10km/litre</h3>
+                                                                                                                                        <h3>Petrol/Diesel</h3>
+                                                                                                                                        <h3>HP Power:500hp
+                                                                                                                                        </h3>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <button type="submit " class="btn btn-warning btn-lg gradient-custom-4 text-body " style="width:120px;height: 35px; margin-left:80px;
+                                                                                                                                    padding-top: 5px; position: relative; left:-42px; font-weight: bolder; " (click)="Login() ">Book Now </button>
+
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+
+
+                                                                                                                        <div class="col-sm-4 ">
+                                                                                                                            <div class="thumbnail ">
+                                                                                                                                <img src="../../../assets/img/x4 " alt="Paris " width="400 " height="300 ">
+                                                                                                                                <h1><strong>BMW X6</strong></h1>
+                                                                                                                                <h1>Price:₹76,90,000</h1>
+
+                                                                                                                                <div class="container">
+
+
+                                                                                                                                    <h2 data-toggle="collapse" data-target="#demo4" style="color:rgb(0, 119, 255) ">Show More</h2>
+                                                                                                                                    <div id="demo4" class="collapse ">
+                                                                                                                                        <h3>Color:Red</h3>
+                                                                                                                                        <h3>TopSpeed:260km/hr</h3>
+                                                                                                                                        <h3>Mileage:16km/litre</h3>
+                                                                                                                                        <h3>Petrol/Diesel</h3>
+                                                                                                                                        <h3>HP Power:220hp
+                                                                                                                                        </h3>
+
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <button type="submit " class="btn btn-warning btn-lg gradient-custom-4 text-body " style="width:120px;height: 35px; margin-left:80px;
+                                                                                                                                    padding-top: 5px; position: relative; left:-42px; font-weight: bolder; " (click)="Login() ">Book Now </button>
+
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+                                                                                                                        <div class="col-sm-4 ">
+                                                                                                                            <div class="thumbnail ">
+                                                                                                                                <img src="../../../assets/img/x7 " alt="Paris " width="400 " height="300 " style="height:182px; ">
+                                                                                                                                <h1><strong>BMW X7</strong></h1>
+                                                                                                                                <h1>Price:₹76,90,000</h1>
+
+                                                                                                                                <div class="container ">
+
+
+                                                                                                                                    <h2 data-toggle="collapse" data-target="#demo5" style="color:rgb(0, 119, 255) ">Show More</h2>
+                                                                                                                                    <div id="demo5" class="collapse ">
+                                                                                                                                        <h3>Color:Black</h3>
+                                                                                                                                        <h3>TopSpeed:300km/hr</h3>
+                                                                                                                                        <h3>Mileage:12km/litre</h3>
+                                                                                                                                        <h3>Petrol/Diesel</h3>
+                                                                                                                                        <h3>HP Power:550hp
+                                                                                                                                        </h3>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <button type="submit " class="btn btn-warning btn-lg gradient-custom-4 text-body " style="width:120px;height: 35px; margin-left:80px;
+                                                                                                                                    padding-top: 5px; position: relative; left:-42px; font-weight: bolder; " (click)="Login() ">Book Now </button>
+
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+
+                                                                                                                        <div class="col-sm-4 ">
+                                                                                                                            <div class="thumbnail ">
+                                                                                                                                <img src="../../../assets/img/m8 " alt="Paris " width="400 " height="300 ">
+                                                                                                                                <h1><strong>BMW M8</strong></h1>
+                                                                                                                                <h1>Price:₹97,90,000</h1>
+
+                                                                                                                                <div class="container ">
+
+
+                                                                                                                                    <h2 data-toggle="collapse" data-target="#demo6" style="color:rgb(0, 119, 255) ">Show More</h2>
+                                                                                                                                    <div id="demo6" class="collapse ">
+                                                                                                                                        <h3>Color:Blue</h3>
+                                                                                                                                        <h3>TopSpeed:340km/hr</h3>
+                                                                                                                                        <h3>Mileage:12km/litre</h3>
+                                                                                                                                        <h3>Petrol/Diesel</h3>
+                                                                                                                                        <h3>HP Power:455hp
+                                                                                                                                        </h3>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <button type="submit " class="btn btn-warning btn-lg gradient-custom-4 text-body " style="width:120px;height: 35px; margin-left:80px;
+                                                                                                                                    padding-top: 5px; position: relative; left:-42px; font-weight: bolder; " (click)="Login() ">Book Now </button>
+
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+
+                                                                                                                        <div class="col-sm-4 ">
+                                                                                                                            <div class="thumbnail ">
+                                                                                                                                <img src="../../../assets/img/m5 " alt="Paris " width="400 " height="300 ">
+                                                                                                                                <h1><strong>BMW M5</strong></h1>
+                                                                                                                                <h1>Price:₹1,20,90,000</h1>
+
+                                                                                                                                <div class="container ">
+
+
+                                                                                                                                    <h2 data-toggle="collapse" data-target="#demo7" style="color:rgb(0, 119, 255) ">Show More</h2>
+                                                                                                                                    <div id="demo7" class="collapse ">
+                                                                                                                                        <h3>Color:Red</h3>
+                                                                                                                                        <h3>TopSpeed:340km/hr</h3>
+                                                                                                                                        <h3>Mileage:10km/litre</h3>
+                                                                                                                                        <h3>Petrol/Diesel</h3>
+                                                                                                                                        <h3>HP Power:720hp
+                                                                                                                                        </h3>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <button type="submit " class="btn btn-warning btn-lg gradient-custom-4 text-body " style="width:120px;height: 35px; margin-left:80px;
+                                                                                                                                    padding-top: 5px; position: relative; left:-42px; font-weight: bolder; " (click)="Login() ">Book Now </button>
+
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+
+
+                                                                                                                        <div class="col-sm-4 ">
+                                                                                                                            <div class="thumbnail ">
+                                                                                                                                <img src="../../../assets/img/z4 " alt=" " width="400 " height="300 " style="height:193px; ">
+                                                                                                                                <h1><strong>BMW Z4</strong></h1>
+                                                                                                                                <h1>Price:₹87,90,000</h1>
+
+                                                                                                                                <div class=" container ">
+
+
+                                                                                                                                    <h2 data-toggle="collapse" data-target="#demo8" style="color:rgb(0, 119, 255) ">Show More</h2>
+                                                                                                                                    <div id="demo8" class="collapse ">
+                                                                                                                                        <h3>Color:Grey</h3>
+                                                                                                                                        <h3>TopSpeed:350km/hr</h3>
+                                                                                                                                        <h3>Mileage:16km/litre</h3>
+                                                                                                                                        <h3>Petrol/Diesel</h3>
+                                                                                                                                        <h3>HP Power:1000hp
+                                                                                                                                        </h3>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <button type="submit " class="btn btn-warning btn-lg gradient-custom-4 text-body " style="width:120px;height: 35px; margin-left:80px;
+                                                                                                                                    padding-top: 5px; position: relative; left:-42px; font-weight: bolder; " (click)="Login() ">Book Now </button>
+
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+
+
+                                                                                                                        <div class="col-sm-4 ">
+                                                                                                                            <div class="thumbnail ">
+                                                                                                                                <img src="../../../assets/img/x6brown " alt="Paris " width="400 " height="300 ">
+                                                                                                                                <h1><strong>BMW X6</strong></h1>
+                                                                                                                                <h1>Price:₹56,90,000</h1>
+
+                                                                                                                                <div class="container ">
+
+
+                                                                                                                                    <h2 data-toggle="collapse" data-target="#demo9" style="color:rgb(0, 119, 255) ">Show More</h2>
+                                                                                                                                    <div id="demo9" class="collapse ">
+                                                                                                                                        <h3>Color:Brown</h3>
+                                                                                                                                        <h3>TopSpeed:260km/hr</h3>
+                                                                                                                                        <h3>Mileage:12km/litre</h3>
+                                                                                                                                        <h3>Petrol/Diesel</h3>
+                                                                                                                                        <h3>HP Power:260hp
+                                                                                                                                        </h3>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <button type="submit " class="btn btn-warning btn-lg gradient-custom-4 text-body " style="width:120px;height: 35px; margin-left:80px;
+                                                                                                                                    padding-top: 5px; position: relative; left:-42px; font-weight: bolder; " (click)="Login() ">Book Now </button>
+
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+
+
+                                                                                                                        <div class="col-sm-4 ">
+                                                                                                                            <div class="thumbnail">
+                                                                                                                                <img src="../../../assets/img/m8 " alt=" " width="400 " height="300 ">
+                                                                                                                                <h1><strong>BMW X9</strong></h1>
+                                                                                                                                <h1>Price:₹1,22,90,000</h1>
+
+                                                                                                                                <div class="container ">
+
+
+                                                                                                                                    <h2 data-toggle="collapse" data-target="#demo10" style="color:rgb(0, 119, 255) ">Show More</h2>
+                                                                                                                                    <div id="demo10" class="collapse ">
+                                                                                                                                        <h3>Color:Red</h3>
+                                                                                                                                        <h3>TopSpeed:350km/hr</h3>
+                                                                                                                                        <h3>Mileage:12km/litre</h3>
+                                                                                                                                        <h3>Petrol/Diesel</h3>
+                                                                                                                                        <h3>HP Power:1000hp
+                                                                                                                                        </h3>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <button type="submit " class="btn btn-warning btn-lg gradient-custom-4 text-body " style="width:120px;height: 35px; margin-left:80px;
+                                                                                                                                    padding-top: 5px; position: relative; left:-42px; font-weight: bolder; " (click)="Login() ">Book Now </button>
+
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+
+                                                                                                                        <div class="col-sm-4 ">
+                                                                                                                            <div class="thumbnail ">
+                                                                                                                                <img src="../../../assets/img/x4 " alt="Paris " width="400 " height="300 " style="height:193px; ">
+                                                                                                                                <h1><strong>BMW X4</strong></h1>
+                                                                                                                                <h1>Price:₹76,90,000</h1>
+
+                                                                                                                                <div class=" container ">
+
+
+                                                                                                                                    <h2 data-toggle="collapse" data-target="#demo11" style="color:rgb(0, 119, 255) ">Show More</h2>
+                                                                                                                                    <div id="demo11" class="collapse ">
+                                                                                                                                        <h3>Color:Red</h3>
+                                                                                                                                        <h3>TopSpeed:260km/hr</h3>
+                                                                                                                                        <h3>Mileage:16km/litre</h3>
+                                                                                                                                        <h3>Petrol/Diesel</h3>
+                                                                                                                                        <h3>HP Power:220hp
+                                                                                                                                        </h3>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <button type="submit " class="btn btn-warning btn-lg gradient-custom-4 text-body " style="width:120px;height: 35px; margin-left:80px;
+                                                                                                                                    padding-top: 5px; position: relative; left:-42px; font-weight: bolder; " (click)="Login() ">Book Now </button>
+
+
+                                                                                                                            </div>
+
+                                                                                                                        </div>
+                                                                                                                        <!-- <h1>youtube</h1> -->
+                                                                                                                        <div class="jumbotron" id="book_jumbo">
+                                                                                                                            <div class="bookticket">
+                                                                                                                                <h1 id="bhok" style="color:black;font-weight: bold;  font-family: fantasy;">Upcoming BMW Series</h1>
+
+
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <section style="position:relative; top:100px; ">
+                                                                                                                        <h2 style="margin-left: 29px; font-weight: bold; color: darkgoldenrod; font-size: 30px;text-align: center; "></h2>
+                                                                                                                        <div class="container-fluid " id="boxx4 ">
+                                                                                                                            <div class="container " id="e1 ">
+
+                                                                                                                                <iframe width="1250 " height="600 " src="https://www.youtube.com/embed/vQXvyV0zIP4 " title="YouTube video player
+                                                                                                                                    " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " style="position:relative;
+                                                                                                                                    left:-150px " allowfullscreen></iframe>
+                                                                                                                                <iframe width=" 1250 " height="600 " src="https://www.youtube.com/embed/Kt0VH2iULrw " title="YouTube video player
+                                                                                                                                    " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " style="position:relative;
+                                                                                                                                    left:-150px; " allowfullscreen></iframe>
+                                                                                                                            </div>
+
+                                                                                                                            <!-- <div class=" container " id="e2 ">
+                                                                                                                                                <iframe width="100% " height="500 " src="https://www.youtube.com/embed/B0JBazVmvoc " title="YouTube video
+                                                                                                                                    player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture "
+                                                                                                                                                    style="position:relative; left:-150px " allowfullscreen></iframe>
+                                                                                                                                            </div> -->
+
+                                                                                                                        </div>
+                                                                                                                    </section>
+                                                                                                                    <!-- < footer -->
+
+
+
+
+
+                                                                                                                    <body style="position:relative; bottom:-120px; left:-85px " id="contacts ">
+                                                                                                                        <hr class=" hr-or ">
+                                                                                                                        <span class="span-or "></span>
+                                                                                                                        <hr class="hr-or ">
+                                                                                                                        <hr class="hr-or ">
+                                                                                                                        <footer class="nb-footer " style="width:1260px; position: relative; top:-120 ">
+                                                                                                                            <div class=" container ">
+                                                                                                                                <div class="row ">
+                                                                                                                                    <div class="col-sm-12 ">
+                                                                                                                                        <div class="about ">
+                                                                                                                                            <!-- <img src="images/logo.png " class="img-responsive center-block " alt=" "> -->
+
+                                                                                                                                            <div class="social-media ">
+                                                                                                                                                <ul class="list-inline ">
+                                                                                                                                                    <li><a href="https://www.facebook.com/ " title=" "><i class="fa fa-facebook "></i></a></li>
+                                                                                                                                                    <li><a href="https://www.twitter.com/ " title=" "><i class="fa fa-twitter "></i></a></li>
+                                                                                                                                                    <li><a href="https://www.google.com/ " title=" "><i class="fa fa-google-plus "></i></a></li>
+                                                                                                                                                    <li><a href="https://www.linkedin.com/ " title=" "><i class="fa fa-linkedin "></i></a></li>
+                                                                                                                                                </ul>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                    <div class="col-md-3 col-sm-6 ">
+                                                                                                                                        <div class="footer-info-single ">
+                                                                                                                                            <h2 class="title ">Contact</h2>
+                                                                                                                                            <ul class="list-unstyled ">
+                                                                                                                                                <li>
+                                                                                                                                                    <a href="https://www.bmw.in/en/fastlane/dealer-locator.html#/dlo/IN/en/BMW_BMWM " title="
+                                                                                                                                    "><i class="fa fa-angle-double-right "></i> Find a Dealer </a>
+                                                                                                                                                </li>
+                                                                                                                                                <li><a href="http://www.nextbootstrap.com/ " title=" "><i class="fa fa-angle-double-right "></i> Contact Us</a></li>
+                                                                                                                                            </ul>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+
+
+
+                                                                                                                                    <div class="col-md-3 col-sm-6 ">
+                                                                                                                                        <div class="footer-info-single ">
+                                                                                                                                            <h2 class="title ">Quick Links</h2>
+                                                                                                                                            <ul class="list-unstyled ">
+                                                                                                                                                <li><a href="https://www.bmw.in/en/configurator.html " title=" "><i class="fa fa-angle-double-right "></i>Build Your BMW </a></li>
+                                                                                                                                                <li><a href="https://www.bmw.in/en/fastlane/bmw-financial-services-new/overview.html " title="
+                                                                                                                                    "><i class="fa fa-angle-double-right "></i>BMW Financial Services</a></li>
+                                                                                                                                            </ul>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                    <div class="col-md-3 col-sm-6 ">
+                                                                                                                                        <div class="footer-info-single ">
+                                                                                                                                            <h2 class="title ">Experience BMW</h2>
+                                                                                                                                            <ul class="list-unstyled ">
+                                                                                                                                                <li>
+                                                                                                                                                    <a href="https://www.bmw.in/en/topics/Fascination-BMW/bmw-group.html " title=" "><i class="fa fa-angle-double-right "></i> BMW Group</a>
+                                                                                                                                                </li>
+                                                                                                                                                <li><a href="https://www.bmw.in/en/topics/Fascination-BMW/bmw-excellence-club.html " title="
+                                                                                                                                    "><i class="fa fa-angle-double-right "></i> BMW Excellence Club</a></li>
+                                                                                                                                                <li>
+                                                                                                                                                    <a href="https://www.bmw.in/en/footer/experience-bmw--/bmw-motorrad.html " title=" "><i class="fa
+                                                                                                                                    fa-angle-double-right "></i> BMW Motorrad</a>
+                                                                                                                                                </li>
+                                                                                                                                            </ul>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                    <div class="col-md-3 col-sm-6 ">
+                                                                                                                                        <div class="footer-info-single ">
+                                                                                                                                            <h2 class="title ">Legal</h2>
+                                                                                                                                            <ul class="list-unstyled ">
+                                                                                                                                                <li><a href="https://www.bmw.in/en/footer/metanavigation/-legal-disclaimer-imprint.html " title="
+                                                                                                                                    "><i class="fa fa-angle-double-right "></i> Legal Disclaimer</a></li>
+                                                                                                                                                <li>
+                                                                                                                                                    <a href="https://www.bmw.in/en/footer/metanavigation/privacy-policy.html " title=" "><i class="fa
+                                                                                                                                    fa-angle-double-right "></i> Privacy Policy</a>
+                                                                                                                                                </li>
+                                                                                                                                                <li>
+                                                                                                                                                    <a href="https://www.bmw.in/en/footer/footer-section/cookie-policy.html " title=" "><i class="fa
+                                                                                                                                    fa-angle-double-right "></i> Cookie Policy</a>
+                                                                                                                                                </li>
+                                                                                                                                            </ul>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+
+                                                                                                                            <section class="copyright ">
+                                                                                                                                <div class="container ">
+                                                                                                                                    <div class="row ">
+                                                                                                                                        <div class="col-sm-6 ">
+                                                                                                                                            <p> © BMW AG 2021</p>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="col-sm-6 "></div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </section>
+                                                                                                                        </footer>
+                                                                                                                    </body>

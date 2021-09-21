@@ -1,0 +1,68 @@
+<h3>Customer Registration Form</h3>
+<div>
+    <form [formGroup]="CustRegForm" (ngSubmit)="Update()">
+        <table border="1">
+
+            <tr>
+                <td>Customer Id:</td>
+                <td><input type="text" formControlName="id"></td>
+                <td><span *ngIf="CustRegForm.controls['id'].hasError('required')">Name is required</span></td>
+                <div *ngIf="CustRegForm.controls['id'].hasError('pattern')">name must be alphabet</div>
+            </tr>
+
+            <tr>
+                <td>Enter Name:</td>
+                <td><input type="text" formControlName="name"></td>
+                <td><span *ngIf="CustRegForm.controls['name'].hasError('required')">Name is required</span></td>
+                <div *ngIf="CustRegForm.controls['name'].hasError('pattern')">name must be alphabet</div>
+            </tr>
+            <tr>
+                <td>Enter Address:</td>
+                <td><textarea rows="5" cols="10" formControlName="address"></textarea></td>
+                <td><span *ngIf="CustRegForm.controls['address'].hasError('required')">Address is required</span></td>
+            </tr>
+            <tr>
+                <td>Select Gender</td>
+                <td><input type="radio" name="gender" value="Male" formControlName="gender">Male
+                    <input type="radio" name="gender" value="FeMale" formControlName="gender">FeMale
+                </td>
+                <td><span *ngIf="CustRegForm.controls['gender'].hasError('required')">gender is required</span></td>
+
+            </tr>
+
+            <tr>
+                <td>Enter Mobile No:</td>
+                <td><input type="text" formControlName="mob"></td>
+                <td><span *ngIf="CustRegForm.controls['mob'].hasError('required')">mobile number is required</span></td>
+                <div *ngIf="CustRegForm.controls['mob'].hasError('pattern')">Mobile no Must be number</div>
+            </tr>
+
+
+            <tr>
+                <td>Enter Email</td>
+                <td><input type="text" formControlName="email"></td>
+                <td><span *ngIf="CustRegForm.controls['email'].hasError('required')">email is required</span></td>
+                <div *ngIf="CustRegForm.controls['email'].hasError('pattern')">Email must be a valid email address</div>
+            </tr>
+
+            <tr>
+                <td>Enter Password</td>
+                <td><input type="text" formControlName="password"></td>
+                <td><span *ngIf="CustRegForm.controls['password'].hasError('required')">email is required</span></td>
+                <div *ngIf="CustRegForm.controls['password'].hasError('pattern')">Password must be at least 6 characters</div>
+
+
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" [disabled]="CustRegForm.invalid"></td>
+                <td colspan=" 2 ">
+                    <div>
+                        <button type="reset ">Reset</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
