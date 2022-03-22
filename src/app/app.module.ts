@@ -61,6 +61,8 @@ import { EmployeeHomePageComponent } from './components/employee-home-page/emplo
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent]  //app component is getting bootstrapped
+                            //This component is defined in app.component.ts file.
+                            // This file interacts with the webpage and serves data to it.
 })
 export class AppModule {}

@@ -27,8 +27,9 @@ export class EmpGetAllOrdersComponent implements OnInit {
     this.svc.GetAllOrders().subscribe(data=>
       {
         //this.custlist=data;
-        this.orderlist=data;
-        console.log(this.orderlist);
+        console.log(data)
+        this.orderlist=data.filter(item => item.billamount > 2000000);
+        console.log(this.orderlist);  
       })
   }
 }

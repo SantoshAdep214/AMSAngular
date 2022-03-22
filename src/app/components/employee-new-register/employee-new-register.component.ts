@@ -16,8 +16,9 @@ export class EmployeeNewRegisterComponent implements OnInit {
   svc:AMSEmployeeService;
   //router:Router;
   emp=new EmployeeRegisterModule();
-  constructor(svc:AMSEmployeeService ,private fb : FormBuilder) {
+  constructor(svc:AMSEmployeeService ,private fb : FormBuilder,private router:Router) {
     this.svc=svc;
+    this.router=router;
    }
 
   ngOnInit(): void {
@@ -58,6 +59,7 @@ export class EmployeeNewRegisterComponent implements OnInit {
       if(data==true)
       {
         alert("New Employee Registered");
+
       }
       else
       {
@@ -68,3 +70,7 @@ export class EmployeeNewRegisterComponent implements OnInit {
    
 }
 
+
+
+
+//this.router.navigateByUrl('/EmployeeLogin');

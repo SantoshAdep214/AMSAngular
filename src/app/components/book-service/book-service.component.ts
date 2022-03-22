@@ -49,8 +49,7 @@ export class BookServiceComponent implements OnInit {
     this.svc.BookService(this.booksvc,this.booksvc.email,this.booksvc.carmodel).subscribe((data)=>
     {    
       console.log("data ="+data);
-      
-      
+            
       if(data==true)
       {
         alert("Successfully Service Booked ");

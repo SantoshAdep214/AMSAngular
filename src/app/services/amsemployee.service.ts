@@ -53,7 +53,7 @@ export class AMSEmployeeService {
     
       return this.http.get<PlacingOrderModule[]>(this.url+"/AMSEmployee/OrderList"); ///api/CustomerAPI/AddCustomer --insertcustomer
         
-    }    
+    }     
     GetAllCars():Observable<CarDetailsModule[]>
     {
     

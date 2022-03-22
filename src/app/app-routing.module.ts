@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core'; 
 import { RouterModule, Routes } from '@angular/router';
 import { AdminGetAllServicesComponent } from './components/admin-get-all-services/admin-get-all-services.component';
 import { AdminLoginComponent } from './components/admin-login/admin-login.component';
@@ -54,5 +54,5 @@ const routes: Routes = [{path:"CustomerRegister",component:CustomerNewRegisterCo
   exports: [RouterModule]    
 })
 export class AppRoutingModule { 
-
-}
+    
+} 
